@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="560" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
+ <title id="title">pfSense to QRadar Network Telemetry Flow</title>
+ <desc id="desc">An additional networking exercise where Kali test traffic crosses pfSense, firewall events are forwarded through Syslog UDP 514 to QRadar, and QRadar detects port scanning behavior.</desc>
+ <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#111c31"/></linearGradient>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#020617" flood-opacity=".4"/></filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#60a5fa"/></marker>
+  <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#34d399"/></marker>
+  <style>.title{font:700 31px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}.subtitle{font:400 16px Inter,Segoe UI,Arial,sans-serif;fill:#cbd5e1}.head{font:700 19px Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}.body{font:400 15px Inter,Segoe UI,Arial,sans-serif;fill:#cbd5e1}.tag{font:700 13px Inter,Segoe UI,Arial,sans-serif;letter-spacing:1px}.small{font:400 13px Inter,Segoe UI,Arial,sans-serif;fill:#94a3b8}</style>
+ </defs>
+ <rect width="1440" height="560" rx="28" fill="url(#bg)"/>
+ <text x="64" y="68" class="title">Network Telemetry Extension</text>
+ <text x="64" y="100" class="subtitle">Separate lab stage · pfSense firewall events → Syslog → QRadar correlation and Offense validation</text>
+ <rect x="64" y="145" width="268" height="220" rx="20" fill="#182235" stroke="#ef4444" stroke-opacity=".8" stroke-width="2" filter="url(#shadow)"/>
+ <rect x="94" y="178" width="208" height="35" rx="10" fill="#7f1d1d"/><text x="198" y="201" class="tag" text-anchor="middle" fill="#fee2e2">TRAFFIC GENERATION</text>
+ <g transform="translate(158 232)" stroke="#fca5a5" stroke-width="2" fill="none"><rect x="0" y="0" width="80" height="46" rx="6"/><path d="M10 10h60M10 20h35M10 30h48M26 54h28l-5 7H31z"/></g>
+ <text x="198" y="319" class="head" text-anchor="middle">Kali Linux</text><text x="198" y="344" class="body" text-anchor="middle">192.168.1.100</text>
+ <path d="M332 255 H425" stroke="#60a5fa" stroke-width="4" marker-end="url(#arrow)"/><text x="378" y="238" class="small" text-anchor="middle">Test traffic</text>
+ <rect x="435" y="145" width="268" height="220" rx="20" fill="#182235" stroke="#f59e0b" stroke-opacity=".85" stroke-width="2" filter="url(#shadow)"/>
+ <rect x="465" y="178" width="208" height="35" rx="10" fill="#78350f"/><text x="569" y="201" class="tag" text-anchor="middle" fill="#fef3c7">NETWORK CONTROL</text>
+ <path d="M543 231h52l22 28-22 28h-52l-22-28z" fill="#b45309" stroke="#fde68a" stroke-width="2"/><path d="M546 246h44m-44 24h44m-22-24v24" stroke="#fef3c7" stroke-width="3"/>
+ <text x="569" y="319" class="head" text-anchor="middle">pfSense 2.7.2</text><text x="569" y="344" class="body" text-anchor="middle">LAN: 192.168.1.1</text>
+ <path d="M703 255 H795" stroke="#34d399" stroke-width="4" marker-end="url(#arrowGreen)"/><text x="750" y="238" class="small" text-anchor="middle">Firewall events</text>
+ <rect x="805" y="145" width="268" height="220" rx="20" fill="#182235" stroke="#10b981" stroke-opacity=".85" stroke-width="2" filter="url(#shadow)"/>
+ <rect x="835" y="178" width="208" height="35" rx="10" fill="#065f46"/><text x="939" y="201" class="tag" text-anchor="middle" fill="#d1fae5">LOG TRANSPORT</text>
+ <g transform="translate(876 230)" fill="none" stroke="#6ee7b7" stroke-width="2"><path d="M0 0h126v47H0z"/><path d="M12 12h102M12 23h84M12 34h94"/><circle cx="114" cy="12" r="3" fill="#6ee7b7"/></g>
+ <text x="939" y="300" class="head" text-anchor="middle">Remote Syslog</text><text x="939" y="326" class="body" text-anchor="middle">UDP / 514</text>
+ <path d="M1073 255 H1165" stroke="#60a5fa" stroke-width="4" marker-end="url(#arrow)"/><text x="1119" y="238" class="small" text-anchor="middle">Ingest</text>
+ <rect x="1175" y="145" width="205" height="220" rx="20" fill="#182235" stroke="#a78bfa" stroke-opacity=".85" stroke-width="2" filter="url(#shadow)"/>
+ <rect x="1195" y="178" width="165" height="35" rx="10" fill="#5b21b6"/><text x="1277" y="201" class="tag" text-anchor="middle" fill="#ede9fe">SIEM</text>
+ <g transform="translate(1238 230)" fill="#5b21b6" stroke="#ddd6fe" stroke-width="2"><ellipse cx="39" cy="10" rx="38" ry="12"/><path d="M1 10v51c0 7 17 12 38 12s38-5 38-12V10"/><ellipse cx="39" cy="61" rx="38" ry="12"/></g>
+ <text x="1277" y="319" class="head" text-anchor="middle">IBM QRadar</text><text x="1277" y="344" class="body" text-anchor="middle">Search &amp; correlate</text>
+ <rect x="64" y="408" width="1316" height="93" rx="17" fill="#101a2d" stroke="#334155"/>
+ <text x="88" y="440" class="tag" fill="#6ee7b7">VALIDATION RESULT</text>
+ <text x="88" y="466" class="body">Rule: one source contacts 100 distinct destination ports within 60 seconds.</text><text x="88" y="488" class="body">Validation: port-scan simulation generated Offense 58, with 304 related events documented in the report.</text>
+ <text x="88" y="524" class="small">Addressing shown for this exercise only; the report documents multiple network configurations across separate lab stages.</text>
+</svg>
