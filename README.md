@@ -2,7 +2,7 @@
 
 A technical portfolio summary of a hands-on Security Operations Center (SOC) internship, covering an isolated Active Directory lab, Windows telemetry collection, adversary emulation, IBM QRadar SIEM investigations, detection-rule engineering, and threat-hunting research.
 
-> **Full technical report:** [`docs/SOC_Internship_Report.pdf`](docs/SOC_Internship_Report.pdf) — the 149-page report contains the extended walkthroughs, screenshots, event payloads, and supporting research. Upload a **sanitized, publication-approved copy** at this path before publishing this repository.
+> **Full technical report:** [`docs/SOC_Internship_Report.pdf`](docs/SOC_Internship_Report.pdf) — the 149-page report contains the extended walkthroughs, screenshots, event payloads, and supporting research.
 
 > **Lab-only notice:** Attack simulations described here were performed or studied in a controlled virtual lab for defensive validation. This repository is a learning portfolio, not a guide for testing systems without authorization.
 
