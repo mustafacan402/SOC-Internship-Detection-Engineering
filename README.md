@@ -37,7 +37,7 @@ The report combines four workstreams:
 
 ### Primary Active Directory / SOC lab
 
-![Primary SOC lab topology](images/soc-lab-topology.jpeg)
+![Primary SOC lab topology](images/soc-lab-topology.jpg)
 
 The original report's topology depicts a Kali Linux red-team host, a Windows Server endpoint, an Active Directory/DNS server, and IBM QRadar SIEM. The diagram above is a cleaned-up portfolio illustration of that design. Windows endpoint telemetry (Windows Security events and Sysmon data) is forwarded for centralized search, correlation, and detection validation.
 
